@@ -228,7 +228,7 @@ function endGame() {
     const timePerWord = totalTime / correctWordCount;
     const errorRatePerWord = (totalTypos / correctWordCount) * 100;
     const timePerCharacter = totalTime / totalTypedCharacters;
-    const wpm = correctWordCount / (totalTime / 60);
+    let wpm = correctWordCount / (totalTime / 60);
 
     const statistics = {
         'Number of words with all letters correct': correctWordCount,

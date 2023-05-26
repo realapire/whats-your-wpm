@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Typracer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+            <h1 id="gameTitle">What's your WPM?</h1>
+            <a href="#" id="btnStart">Start</a>
+        </div>
+
+        <div class="game hidden">
+            <div class="words-container"></div>
+            <input type="text" class="invisible" autocomplete="off" id="txtInput">
+            <div class="timer" id="txtTimer">30s</div>
+        </div>
+
+        <div class="stats hidden">
+            <div class="stats-container">
+                <p class="wpm">
+                    <span class="title">wpm</span>
+                    <span class="value" id="txtWpm">15</span>
+                </p>
+                <div class="table">
+                    <p class="acc">
+                        <span class="title">acc</span>
+                        <span class="value" id="txtAcc">44%</span>
+                    </p>
+                    <p class="err">
+                        <span class="title">err</span>
+                        <span class="value" id="txtErr">44%</span>
+                    </p>
+                </div>
+            </div>
+            <a href="#" id="btnRestart">Restart</a>
+        </div>
+        <div class="footer">
+            <p>
+                <span>Made by apire for What's your - series</span>
+            </p>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

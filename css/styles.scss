@@ -114,3 +114,15 @@ body, html, .container {
 .timer {
     font-weight: 200;
 }
+
+@media(max-width: 1200px) {
+    #gameTitle {
+        text-align: center;
+    }
+
+    .words-container {
+        padding: 15px;
+        font-size: 20px !important;
+        justify-content: start !important;
+    }
+}
